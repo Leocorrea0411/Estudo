@@ -1,0 +1,38 @@
+unit AppSimples;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.TabNotBk,
+  Vcl.StdCtrls;
+
+type
+  TFormPrincipal = class(TForm)
+    TabbedNotebook1: TTabbedNotebook;
+    pnlTitulo2: TPanel;
+    pnlTitulo1: TPanel;
+    Memo: TMemo;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    rgCampos: TRadioGroup;
+    edtCampo: TEdit;
+    lbLeitura: TLabel;
+    edtLeitura: TEdit;
+    lbCampo: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+end.

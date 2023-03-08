@@ -1,0 +1,153 @@
+object FormPrincipal: TFormPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Sistema Estudo'
+  ClientHeight = 228
+  ClientWidth = 558
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TabbedNotebook1: TTabbedNotebook
+    Left = 0
+    Top = 0
+    Width = 558
+    Height = 228
+    Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    TabFont.Charset = DEFAULT_CHARSET
+    TabFont.Color = clBtnText
+    TabFont.Height = -11
+    TabFont.Name = 'Tahoma'
+    TabFont.Style = []
+    TabOrder = 0
+    ExplicitHeight = 483
+    object TTabPage
+      Left = 4
+      Top = 24
+      Caption = 'C.R.U.D'
+      ExplicitWidth = 292
+      ExplicitHeight = 222
+      object lbLeitura: TLabel
+        Left = 24
+        Top = 146
+        Width = 84
+        Height = 13
+        Caption = 'Leitura de dados:'
+      end
+      object lbCampo: TLabel
+        Left = 24
+        Top = 87
+        Width = 54
+        Height = 13
+        Caption = 'Digite algo:'
+      end
+      object pnlTitulo1: TPanel
+        Left = 0
+        Top = 0
+        Width = 550
+        Height = 41
+        Align = alTop
+        Caption = 'C.R.U.D'
+        TabOrder = 0
+        ExplicitLeft = 360
+        ExplicitTop = 168
+        ExplicitWidth = 185
+      end
+      object Memo: TMemo
+        Left = 296
+        Top = 41
+        Width = 254
+        Height = 159
+        Align = alRight
+        ReadOnly = True
+        TabOrder = 1
+        ExplicitHeight = 414
+      end
+      object Button1: TButton
+        Left = 215
+        Top = 70
+        Width = 75
+        Height = 25
+        Caption = 'Create'
+        TabOrder = 2
+      end
+      object Button2: TButton
+        Left = 215
+        Top = 101
+        Width = 75
+        Height = 25
+        Caption = 'Read'
+        TabOrder = 3
+      end
+      object Button3: TButton
+        Left = 215
+        Top = 165
+        Width = 75
+        Height = 25
+        Caption = 'Delete'
+        TabOrder = 4
+      end
+      object Button4: TButton
+        Left = 215
+        Top = 134
+        Width = 75
+        Height = 25
+        Caption = 'Update'
+        TabOrder = 5
+      end
+      object rgCampos: TRadioGroup
+        Left = 8
+        Top = 70
+        Width = 201
+        Height = 120
+        Caption = 'Campos:'
+        TabOrder = 6
+      end
+      object edtCampo: TEdit
+        Left = 24
+        Top = 103
+        Width = 169
+        Height = 21
+        TabOrder = 7
+      end
+      object edtLeitura: TEdit
+        Left = 24
+        Top = 160
+        Width = 169
+        Height = 21
+        TabOrder = 8
+      end
+    end
+    object TTabPage
+      Left = 4
+      Top = 24
+      Caption = 'P.O.O'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      object pnlTitulo2: TPanel
+        Left = 0
+        Top = 0
+        Width = 550
+        Height = 41
+        Align = alTop
+        Caption = 'Programa'#231#227'o Orientada a Objeto'
+        TabOrder = 0
+        ExplicitLeft = 128
+        ExplicitTop = 136
+        ExplicitWidth = 185
+      end
+    end
+  end
+end

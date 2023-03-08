@@ -1,0 +1,16 @@
+unit uFuncoes;
+
+
+interface
+
+Function CampoVazio(Valor:string):String;
+
+
+implementation
+
+Function CampoVazio(Valor:string):String;
+begin
+  Valor:='';
+end;
+
+end.

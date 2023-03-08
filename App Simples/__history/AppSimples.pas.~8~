@@ -1,0 +1,65 @@
+unit AppSimples;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.TabNotBk,
+  Vcl.StdCtrls;
+
+type
+  TFormPrincipal = class(TForm)
+    TabbedNotebook1: TTabbedNotebook;
+    pnlTitulo2: TPanel;
+    pnlTitulo1: TPanel;
+    Memo: TMemo;
+    btnCreate: TButton;
+    btnRead: TButton;
+    btnDelete: TButton;
+    btnUpdate: TButton;
+    rgCampos: TRadioGroup;
+    edtCampo: TEdit;
+    lbLeitura: TLabel;
+    edtLeitura: TEdit;
+    lbCampo: TLabel;
+    procedure btnCreateClick(Sender: TObject);
+    procedure btnDeleteClick(Sender: TObject);
+    procedure btnReadClick(Sender: TObject);
+    procedure btnUpdateClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrincipal: TFormPrincipal;
+
+implementation
+
+Uses
+uFuncoes;
+
+{$R *.dfm}
+
+procedure TFormPrincipal.btnCreateClick(Sender: TObject);
+begin
+  uFuncoes.Create(edtCampo,Memo);
+end;
+
+procedure TFormPrincipal.btnDeleteClick(Sender: TObject);
+begin
+  uFuncoes.Delete(Memo,edtCampo.Text);
+end;
+
+procedure TFormPrincipal.btnReadClick(Sender: TObject);
+begin
+  uFuncoes.Read(edtCampo,memo,edtLeitura);
+end;
+
+procedure TFormPrincipal.btnUpdateClick(Sender: TObject);
+begin
+  uFuncoes.Update(edtCampo,Memo,edtLeitura);
+end;
+
+end.
