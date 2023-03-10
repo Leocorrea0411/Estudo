@@ -43,27 +43,28 @@ uFuncoes;
 
 {$R *.dfm}
 
+// Função Create (Criar)
 procedure TFormPrincipal.btnCreateClick(Sender: TObject);
 begin
-try
-  uFuncoes.Create(edtCampo,Memo);
-finally
-  showmessage('Você está criando o dado: '+edtCampo.Text);
-end;
+  try
+    uFuncoes.Create(edtCampo,Memo);
+  finally
+    showmessage('Você está criando o dado: '+edtCampo.Text);
+  end;
 end;
 
+// Função Delete (Deletar/Excluir)
 procedure TFormPrincipal.btnDeleteClick(Sender: TObject);
 begin
- try
- uFuncoes.Delete(Memo,edtCampo.Text);
- finally
-   showmessage('Você está excluindo o dado: '+ edtCampo.Text);
- end;
+   try
+    uFuncoes.Delete(Memo,edtCampo.Text);
+   finally
+    showmessage('Você está excluindo o dado: '+ edtCampo.Text);
+   end;
 end;
 
+//Função Read (Leitura)
 procedure TFormPrincipal.btnReadClick(Sender: TObject);
-Var
-Dado:string;
 begin
   try
    uFuncoes.Read(edtCampo,memo,edtLeitura)
@@ -72,13 +73,15 @@ begin
   end;
 end;
 
+
+//Função Update (Atualizar)
 procedure TFormPrincipal.btnUpdateClick(Sender: TObject);
 begin
-try
-  uFuncoes.Update(edtCampo,Memo,edtLeitura);
-finally
-  showmessage('Você está atualizando o dado: '+edtLeitura.Text+' para o dado: ' + edtCampo.text);
-end;
+  try
+    uFuncoes.Update(edtCampo,Memo,edtLeitura);
+  finally
+    showmessage('Você está atualizando o dado: '+edtLeitura.Text+' para o dado: ' + edtCampo.text);
+  end;
 end;
 
 end.
