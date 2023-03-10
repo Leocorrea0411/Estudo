@@ -1,8 +1,5 @@
 unit uFuncoes;
 
-
-
-
 interface
 
 uses
@@ -70,11 +67,6 @@ begin
   else
     EditRead.Text := '';
 end;
-
-
-
-
-
 
 
 Function Update (edit:Tedit; Memo:TMemo; editAlt:TEdit):String;

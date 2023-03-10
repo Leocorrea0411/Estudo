@@ -2,8 +2,8 @@ object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
   Caption = 'Sistema para Estudo'
-  ClientHeight = 243
-  ClientWidth = 565
+  ClientHeight = 300
+  ClientWidth = 587
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,8 +16,8 @@ object FormPrincipal: TFormPrincipal
   object TabbedNotebook: TTabbedNotebook
     Left = 0
     Top = 0
-    Width = 565
-    Height = 243
+    Width = 587
+    Height = 300
     Align = alClient
     TabFont.Charset = DEFAULT_CHARSET
     TabFont.Color = clBtnText
@@ -25,14 +25,15 @@ object FormPrincipal: TFormPrincipal
     TabFont.Name = 'Tahoma'
     TabFont.Style = []
     TabOrder = 0
-    ExplicitWidth = 558
-    ExplicitHeight = 228
+    ExplicitLeft = 56
+    ExplicitWidth = 743
+    ExplicitHeight = 466
     object TTabPage
       Left = 4
       Top = 24
       Caption = 'C.R.U.D'
-      ExplicitWidth = 550
-      ExplicitHeight = 200
+      ExplicitWidth = 557
+      ExplicitHeight = 215
       object lbLeitura: TLabel
         Left = 24
         Top = 146
@@ -50,99 +51,123 @@ object FormPrincipal: TFormPrincipal
       object pnlTitulo1: TPanel
         Left = 0
         Top = 0
-        Width = 557
+        Width = 579
         Height = 41
         Align = alTop
         Caption = 'C.R.U.D'
+        Color = clHighlight
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -17
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentBackground = False
+        ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 550
+        ExplicitWidth = 557
       end
       object Memo: TMemo
-        Left = 303
-        Top = 41
-        Width = 254
-        Height = 174
-        Align = alRight
+        Left = 388
+        Top = 73
+        Width = 173
+        Height = 168
+        Align = alCustom
         ReadOnly = True
         TabOrder = 1
-        ExplicitLeft = 296
-        ExplicitTop = 47
-        ExplicitHeight = 159
-      end
-      object btnCreate: TButton
-        Left = 215
-        Top = 70
-        Width = 75
-        Height = 25
-        Caption = 'C - Create'
-        TabOrder = 2
-        OnClick = btnCreateClick
-      end
-      object btnRead: TButton
-        Left = 215
-        Top = 101
-        Width = 75
-        Height = 25
-        Caption = 'R - Read'
-        TabOrder = 3
-        OnClick = btnReadClick
-      end
-      object btnDelete: TButton
-        Left = 215
-        Top = 165
-        Width = 75
-        Height = 25
-        Caption = 'D - Delete'
-        TabOrder = 4
-        OnClick = btnDeleteClick
-      end
-      object btnUpdate: TButton
-        Left = 215
-        Top = 134
-        Width = 75
-        Height = 25
-        Caption = 'U - Update'
-        TabOrder = 5
-        OnClick = btnUpdateClick
       end
       object rgCampos: TRadioGroup
-        Left = 8
-        Top = 70
-        Width = 201
-        Height = 120
+        Left = 0
+        Top = 73
+        Width = 217
+        Height = 169
         Caption = 'Campos:'
-        TabOrder = 6
+        TabOrder = 2
       end
       object edtCampo: TEdit
         Left = 24
         Top = 103
         Width = 169
         Height = 21
-        TabOrder = 7
+        TabOrder = 3
       end
       object edtLeitura: TEdit
         Left = 24
         Top = 160
         Width = 169
         Height = 21
-        TabOrder = 8
+        TabOrder = 4
+      end
+      object Panel1: TPanel
+        Left = 240
+        Top = 72
+        Width = 129
+        Height = 169
+        TabOrder = 5
+        object btnCreate: TButton
+          Left = 1
+          Top = 1
+          Width = 127
+          Height = 41
+          Align = alTop
+          Caption = 'C - Create'
+          Style = bsCommandLink
+          TabOrder = 0
+          OnClick = btnCreateClick
+          ExplicitTop = -5
+        end
+        object btnRead: TButton
+          Left = 1
+          Top = 42
+          Width = 127
+          Height = 41
+          Align = alTop
+          Caption = 'R - Read'
+          Style = bsCommandLink
+          TabOrder = 1
+          OnClick = btnReadClick
+          ExplicitWidth = 271
+        end
+        object btnUpdate: TButton
+          Left = 1
+          Top = 83
+          Width = 127
+          Height = 41
+          Align = alTop
+          Caption = 'U - Update'
+          Style = bsCommandLink
+          TabOrder = 2
+          OnClick = btnUpdateClick
+          ExplicitTop = 89
+        end
+        object btnDelete: TButton
+          Left = 1
+          Top = 124
+          Width = 127
+          Height = 41
+          Align = alTop
+          Caption = 'D - Delete'
+          Style = bsCommandLink
+          TabOrder = 3
+          OnClick = btnDeleteClick
+          ExplicitTop = 130
+        end
       end
     end
     object TTabPage
       Left = 4
       Top = 24
       Caption = 'P.O.O'
-      ExplicitWidth = 550
-      ExplicitHeight = 200
+      ExplicitWidth = 557
+      ExplicitHeight = 215
       object pnlTitulo2: TPanel
         Left = 0
         Top = 0
-        Width = 557
+        Width = 579
         Height = 41
         Align = alTop
         Caption = 'Programa'#231#227'o Orientada a Objeto'
         TabOrder = 0
-        ExplicitWidth = 550
+        ExplicitWidth = 557
       end
     end
   end
